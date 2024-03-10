@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="/css/alquraa/yasser.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/toasty.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.x.x/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="/toasty.css" />
+    <title>مواقيت الصلاة</title>
+</head>
+
+<body dir="ltr">
+    <header>
+        <a href="#" class="logo">
+            <img src="/images/athar.png" alt="" class="logo">
+        </a>
+        <div class="openmenu"><i class="fa fa-bars"></i></div>
+        <ul class="nav">
+            <li><a href="/azkar.html">أذكار</a></li>
+            <li><a href="/podcast.html">بودكاست</a></li>
+            <li><a href="/Pages/alquraa/a7adis.html">أحاديث</a></li>
+            <li><a href="/Pages/quran.html">القران الكريم</a></li>
+            <li><a href="/index.html">الصفحة الرئيسية</a></li>
+            <div class="closemenu"><i class="fa fa-times"></i></div>
+        </ul>
+    </header>
+    <style>
+        body {
+
+            text-align: center;
+        }
+
+        audio {
+            width: 280px;
+        }
+
+        button {
+            color: #ffffff;
+            background-color: #11a28f;
+            border: none;
+            margin: 10px;
+            height: 60px;
+            border-radius: 20px;
+            width: 300px;
+            margin-top: 30px;
+        }
+
+        #surasList {
+            background-color: #11a28f;
+            color: #ffffff;
+            padding: 10px;
+            height: 60px;
+            margin-top: 30px;
+            margin: 10px;
+            width: 300px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 20px;
+            transition: all 0.9s ease;
+        }
+
+        h1 {
+            margin-top: 100px;
+            margin-bottom: 40px;
+        }
+
+        .flex {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+
+        }
+
+        .button-flex {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+
+        }
+
+        .audio-img {
+            box-shadow: rgba(149, 157, 165, 0.2) -13px 19px 15px 0px;
+            width: 300px;
+            background-color: #11a28f;
+            padding: 20px 14px 20px 14px;
+            border: none;
+            border-radius: 20px;
+        }
+
+        .audio-img img {
+            width: 100%;
+            height: auto;
+            border: none;
+            border-radius: 10px;
+
+        }
+        body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1000px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #11a28f;
+}
+
+.prayer-time-item {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* توسيط العناصر عموديا */
+}
+
+.prayer-time-label {
+    font-weight: bold;
+    color: #11a28f;
+    flex: 1; 
+    text-align: left; 
+    padding-right: 10px; 
+}
+
+.prayer-time-value {
+    color: #333;
+    flex: 1; 
+    text-align: right; 
+}
+    @media  (max-width: 1000px) {
+        .container {
+    width: 800px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+    }
+     @media  (max-width: 800px) {
+        .container {
+    width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+    }
+     @media  (max-width: 600px) {
+        .container {
+    width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+    * {
+  scrollbar-width: thin;
+  scrollbar-color: #11a28f orange;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #11a28f;
+  border-radius: 50px;
+  background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(17,162,143,1) 0%, rgba(0,212,255,0) 100%);
+}
+    }
+     @media  (max-width: 400px) {
+        .container {
+    width: 200px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+    }
+
+
+    </style>
+    </head>
+
+    <body>
+        <ul class="notifications"></ul>
+
+            <div class="container">
+                <h1>مواقيت الصلاة</h1>
+                <div id="prayer-times"></div>
+            </div>
+
+       
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+<script src="/js/prat-times.js"></script>
+<script src="/toasty.js"></script>
+<script>
+    toasty.success("صل على النبي محمد");
+    document.addEventListener("DOMContentLoaded", function () {
+            fetchPrayerTimes();
+        });
+
+        function fetchPrayerTimes() {
+            const url = "https://api.aladhan.com/v1/timingsByCity/29-02-2024?city=cairo&country=egypt";
+
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    displayPrayerTimes(data.data.timings);
+                })
+                .catch(error => console.error('خطأ في جلب مواقيت الصلاة:', error));
+        }
+         function tConvert(timings) {
+                // Check correct time format and split into components
+                time = time.toString().match(/^([01]\d|2[0-3])(:)([0-5]\d)(:[0-5]\d)?$/) || [
+                    time,
+                ];
+
+                if (time.length > 1) {
+                    // If time format correct
+                    time = time.slice(1); // Remove full string match value
+                    time[5] = +time[0] < 12 ? "AM" : "PM"; // Set AM/PM
+                    time[0] = +time[0] % 12 || 12; // Adjust hours
+                }
+                return time.join(""); // return adjusted time or original string
+            }
+        function displayPrayerTimes(timings) {
+            const prayerTimesDiv = document.getElementById("prayer-times");
+            const prayersToDisplay = ['Fajr', 'Dhuhr', 'Asr', 'Maghrib', 'Isha'];
+
+            prayersToDisplay.forEach(prayer => {
+                const prayerTimeItem = document.createElement("div");
+                prayerTimeItem.classList.add("prayer-time-item");
+
+                const prayerTimeLabel = document.createElement("span");
+                prayerTimeLabel.classList.add("prayer-time-label");
+                prayerTimeLabel.textContent = getArabicPrayerName(prayer);
+
+                const prayerTimeValue = document.createElement("span");
+                prayerTimeValue.classList.add("prayer-time-value");
+                prayerTimeValue.textContent = timings[prayer];
+
+                prayerTimeItem.appendChild(prayerTimeLabel);
+                prayerTimeItem.appendChild(prayerTimeValue);
+                prayerTimesDiv.appendChild(prayerTimeItem);
+            });
+        }
+
+
+        function getArabicPrayerName(prayer) {
+            switch (prayer) {
+                case 'Fajr': return 'الفجر';
+                case 'Dhuhr': return 'الظهر';
+                case 'Asr': return 'العصر';
+                case 'Maghrib': return 'المغرب';
+                case 'Isha': return 'العشاء';
+                default: return prayer;
+            }
+        }
+       
+
+
+</script>
+
+</body>
+
+</html>

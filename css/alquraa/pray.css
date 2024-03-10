@@ -1,0 +1,1037 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Orbitron:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  color: #000000;
+  background: #f3f8ff;
+}
+.vbox {
+  --mask:
+    radial-gradient(86.28px at 50% calc(100% + 46.90px),#0000 calc(99% - 9px),#000 calc(101% - 9px) 99%,#0000 101%) calc(50% - 134px) calc(50% - 38px + .5px)/268px 76px ,
+    radial-gradient(86.28px at 50% -46.9px,#0000 calc(99% - 9px),#000 calc(101% - 9px) 99%,#0000 101%) 50% calc(50% + 38px)/268px 76px ;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+}
+.logo{
+    width: 130px;
+}
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px;
+  background: transparent;
+  z-index: 1000;
+  overflow: hidden;
+  position: fixed;
+  backdrop-filter: blur(40px);
+}
+.nav {
+  display: flex;
+  text-align: right;
+}
+.nav a {
+  margin: 0 20px;
+  padding: 4px;
+  color: #000000;
+  font-size: 17px;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: all 0.5s ease;
+}
+.nav a:hover {
+  margin: 0 20px;
+  padding: 4px;
+  color: #11a28f;
+  border-bottom: 2px solid #11a28f;
+  font-size: 17px;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+.home{
+  width: 100%;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 20px;
+ 
+}
+
+.athar-img img{
+    position: relative;
+    left: -100px;
+    bottom: -100px;
+    width: 740px;
+    animation: moveImage 4s infinite ease-in-out;
+}
+@keyframes moveImage {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(30px);
+  }
+  
+  100% {
+    transform: translateX(0);
+  }
+}
+.text-right{
+    margin-bottom: -170px;
+}
+.text-right h1{
+    font-family: 'Almarai', sans-serif;
+    font-size: 90px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #11a28f;
+    font-weight: 800;
+}
+    * {
+  scrollbar-width: thin;
+  scrollbar-color: #11a28f orange;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #11a28f;
+  border-radius: 50px;
+  background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(17,162,143,1) 0%, rgba(0,212,255,0) 100%);
+}
+.text-right p{
+    padding: 40px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000000b7;
+    font-weight: 800;
+}
+.text-right button{
+    border: none;
+    background: #11a28f;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 300px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 240px;
+    height: 50px;
+    transition: all 0.7s ease;
+}
+.text-right button:hover{
+    border: none;
+    background: transparent;
+    color: #11a28f;
+    border: 1px solid #11a28f;
+    font-size: 20px;
+    width: 300px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 240px;
+    height: 50px;
+}
+span{
+    color: #11a28f;
+}
+
+
+.text-right .button {
+    width: 300px;
+    display: inline-block;
+  border: none;
+    background: #11a28f;
+    color: white;
+    border-radius: 10px;
+    font-size: 25px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 240px;
+    height: 50px;
+    transition: all 0.7s ease;
+}
+.text-right .button:hover {
+  border: none;
+    background: transparent;
+    color: #11a28f;
+    border: 1px solid #11a28f;
+    font-size: 25px;
+    width: 300px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 240px;
+    height: 50px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup {
+  margin: 165px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 20px;
+  width: 30%;
+  position: relative;
+  transition: all .7s ease-in-out;
+}
+.popup h2 {
+    align-items: center;
+    text-align: center;
+    margin-top: 0;
+    color: #11a28f;
+    font-family: 'Almarai', sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #11a28f;
+}
+.popup .close:hover {
+  color: #000;
+}
+.popup .content {
+  max-height: 100%;
+  overflow: auto;
+  
+}
+.content{
+    margin: 20px;
+}
+.content .button1{
+    width: 100px;
+    display: grid;
+    border: none;
+    background: #11a28f;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 144px;
+    height: 50px;
+    margin: 20px 0 20px 144px;
+    transition: all 0.7s ease;
+}
+.content .button1:hover{
+    width: 100px;
+    display: grid;
+    border: none;
+    background: transparent;
+    color: #11a28f;
+    border: 1px solid #11a28f;
+    border-radius: 10px;
+    font-size: 15px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 144px;
+    height: 50px;
+    margin: 20px 0 20px 144px;
+    transition: all 0.7s ease;
+}
+@media (min-width: 576px) {
+  .athar-img img{
+    position: relative;
+    left: -100px;
+    bottom: -100px;
+    width: 340px;
+    animation: moveImage 4s infinite ease-in-out;
+}
+.text-right{
+    margin-bottom: -230px;
+    position: absolute;
+    left: 170px;
+}
+.text-right h1{
+    font-family: 'Almarai', sans-serif;
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #11a28f;
+    font-weight: 800;
+}
+.text-right p{
+    padding: 40px;
+    font-size: 11px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000000b7;
+    font-weight: 800;
+}
+.text-right .button{
+    border: none;
+    background: #11a28f;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 200px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 120px;
+    height: 40px;
+    transition: all 0.7s ease;
+}
+.text-right .button:hover{
+    width: 200px;
+    display: grid;
+    border: none;
+    background: transparent;
+    color: #11a28f;
+    border: 1px solid #11a28f;
+    border-radius: 10px;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 120px;
+    height: 40px;
+    transition: all 0.7s ease;
+}
+}
+@media (min-width: 768px){
+  .logo{
+    width: 100px;
+    margin-top: 10px;
+}
+  .nav a {
+  margin: 0 10px;
+  padding: 6px;
+  color: #000000;
+  font-size: 13px;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: all 0.5s ease;
+}
+.nav a:hover {
+  margin: 0 10px;
+  padding: 6px;
+  color: #11a28f;
+  border-bottom: 2px solid #11a28f;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+  .athar-img img{
+    position: relative;
+    left: -100px;
+    bottom: -100px;
+    width: 340px;
+    animation: moveImage 4s infinite ease-in-out;
+}
+.text-right p{
+    padding: 40px;
+    font-size: 13px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000000b7;
+    font-weight: 800;
+}
+.text-right .button{
+    border: none;
+    background: #11a28f;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 200px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 200px;
+    height: 40px;
+    transition: all 0.7s ease;
+}
+.text-right .button:hover{
+    width: 200px;
+    display: grid;
+    border: none;
+    background: transparent;
+    color: #11a28f;
+    border: 1px solid #11a28f;
+    border-radius: 10px;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 200px;
+    transition: all 0.7s ease;
+}
+}
+@media (min-width: 992px) {
+   .logo{
+    width: 110px;
+}
+  .nav a {
+  margin: 0 10px;
+  padding: 6px;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: all 0.5s ease;
+}
+.nav a:hover {
+  margin: 0 10px;
+  padding: 6px;
+  color: #11a28f;
+  border-bottom: 2px solid #11a28f;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+  .athar-img img{
+    position: relative;
+    left: -100px;
+    bottom: -100px;
+    width: 340px;
+    animation: moveImage 4s infinite ease-in-out;
+}
+.text-right{
+    margin-bottom: -220px;
+    position: absolute;
+    left: 240px;
+}
+.text-right h1{
+    font-family: 'Almarai', sans-serif;
+    font-size: 55px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #11a28f;
+    font-weight: 800;
+}
+.text-right p{
+    padding: 40px;
+    font-size: 17px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000000b7;
+    font-weight: 800;
+}
+.text-right .button{
+    border: none;
+    background: #11a28f;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 200px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 290px;
+    height: 40px;
+    transition: all 0.7s ease;
+}
+.text-right .button:hover{
+    width: 200px;
+    display: grid;
+    border: none;
+    background: transparent;
+    color: #11a28f;
+    border: 1px solid #11a28f;
+    border-radius: 10px;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 290px;
+    height: 40px;
+    transition: all 0.7s ease;
+}
+}
+@media (min-width: 1200px) {
+   .logo{
+    width: 110px;
+}
+  .nav a {
+  margin: 0 20px;
+  padding: 4px;
+  color: #000000;
+  font-size: 19px;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: all 0.5s ease;
+}
+.nav a:hover {
+  margin: 0 20px;
+  padding: 4px;
+  color: #11a28f;
+  border-bottom: 2px solid #11a28f;
+  font-size: 19px;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+  .athar-img img{
+    position: relative;
+    left: -100px;
+    bottom: -100px;
+    width: 550px;
+    animation: moveImage 4s infinite ease-in-out;
+}
+.text-right{
+    margin-bottom: -220px;
+    position: absolute;
+    left: 290px;
+}
+.text-right h1{
+    font-family: 'Almarai', sans-serif;
+    font-size: 65px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #11a28f;
+    font-weight: 800;
+}
+.text-right p{
+    padding: 40px;
+    font-size: 19px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000000b7;
+    font-weight: 800;
+}
+.text-right .button{
+    border: none;
+    background: #11a28f;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 300px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 310px;
+    height: 40px;
+    transition: all 0.7s ease;
+}
+.text-right .button:hover{
+    width: 300px;
+    display: grid;
+    border: none;
+    background: transparent;
+    color: #11a28f;
+    border: 1px solid #11a28f;
+    border-radius: 10px;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 310px;
+    height: 40px;
+    transition: all 0.7s ease;
+}
+}
+@media (min-width: 1400px) {
+   .logo{
+    width: 130px;
+}
+  .nav a {
+  margin: 0 20px;
+  padding: 4px;
+  color: #000000b8;
+  font-size: 20px;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: all 0.5s ease;
+}
+.nav a:hover {
+  margin: 0 20px;
+  padding: 4px;
+  color: #11a28f;
+  border-bottom: 2px solid #11a28f;
+  font-size: 20px;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+  .athar-img img{
+    position: relative;
+    left: -100px;
+    bottom: -100px;
+    width: 700px;
+    animation: moveImage 4s infinite ease-in-out;
+}
+.text-right{
+    margin-bottom: -220px;
+    position: absolute;
+    left: 390px;
+}
+.text-right h1{
+    font-family: 'Almarai', sans-serif;
+    font-size: 88px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #11a28f;
+    font-weight: 800;
+}
+.text-right p{
+    padding: 45px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000000b7;
+    font-weight: 800;
+}
+.text-right .button{
+    border: none;
+    background: #11a28f;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 300px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 420px;
+    height: 40px;
+    transition: all 0.7s ease;
+}
+.text-right .button:hover{
+    width: 300px;
+    display: grid;
+    border: none;
+    background: transparent;
+    color: #11a28f;
+    border: 1px solid #11a28f;
+    border-radius: 10px;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 420px;
+    height: 40px;
+    
+    transition: all 0.7s ease;
+}
+}
+@media(max-width:400px){
+  .logo{
+    width: 90px;
+  }
+  .athar-img img{
+    position: relative;
+    left: -100px;
+    bottom: -100px;
+    width: 280px;
+}
+.text-right{
+    margin-bottom: -260px;
+    position: absolute;
+    left: -76px;
+}
+.text-right h1{
+    font-family: 'Almarai', sans-serif;
+    font-size: 30px;
+    margin-left: 200px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #11a28f;
+    font-weight: 800;
+}
+.text-right p{
+    padding: 25px;
+    margin-left: 170px;
+    font-size: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000000b7;
+    font-weight: 800;
+}
+.text-right .button{
+    border: none;
+    background: #11a28f;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    width: 100px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 280px;
+    height: 30px;
+    transition: all 0.7s ease;
+}
+.text-right .button:hover{
+    width: 300px;
+    display: grid;
+    border: none;
+    background: transparent;
+    color: #11a28f;
+    border: 1px solid #11a28f;
+    border-radius: 10px;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 420px;
+    height: 40px;
+    transition: all 0.7s ease;
+}
+}
+@media(max-width:576px){
+   .athar-img img{
+    position: relative;
+    left: -100px;
+    bottom: -100px;
+    width: 400px;
+    animation: moveImage 4s infinite ease-in-out;
+}
+.text-right{
+    margin-bottom: -220px;
+    position: absolute;
+    left: 100px;
+}
+.text-right h1{
+    font-family: 'Almarai', sans-serif;
+    font-size: 40px;
+    margin-left: 80px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #11a28f;
+    font-weight: 800;
+}
+.text-right p{
+    font-size: 12px;
+    margin-left: 97px;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000000b7;
+    font-weight: 800;
+}
+.text-right .button{
+    border: none;
+    background: #11a28f;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 187px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 147px;
+    height: 40px;
+    transition: all 0.7s ease;
+}
+.text-right .button:hover{
+    width: 187px;
+    display: grid;
+    border: none;
+    background: transparent;
+    color: #11a28f;
+    border: 1px solid #11a28f;
+    border-radius: 10px;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 147px;
+    height: 40px;
+    
+    transition: all 0.7s ease;
+}
+}
+header .openmenu{
+  display: none;
+}
+header .nav .closemenu{
+  display: none;
+}
+@media (max-width: 800px) {
+  header .nav{
+    height: 100vh;
+    line-height: 100px;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    backdrop-filter: blur(40px);
+    transition: top 1s ease;
+    color: rgb(0, 0, 0);
+    display: none;
+  }
+   header .nav a{
+   margin: 20px;
+   padding: 20px;
+   line-height: 20px;
+    color:#11a28f;
+    font-weight: 700;
+    font-family: 'Almarai', sans-serif;
+  }
+  header .nav .closemenu{
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  header .openmenu{
+    display: block;
+  }
+  
+  header .nav li a:hover{
+    font-size: 1.6rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#surahs {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+#surah-content {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+p {
+    text-align: right;
+    direction: rtl;
+}
+
+
+
+
+
+
+
+/* sidebar */
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    backdrop-filter: blur(60px);
+    overflow-x: hidden;
+    transition: 0.9s;
+    padding-top: 60px;
+    text-align: right;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #11a28f;
+    display: block;
+    transition: 0.9s;
+}
+
+.sidebar a:hover {
+    color: #03453c;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.content {
+    margin-left: -30px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 320px;
+    padding: 16px;
+    transition: margin-left .6s;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #11a28f;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 100px;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+
+.sidebar .closeSidebarBtn {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.6s;
+}
+
+.sidebar .closeSidebarBtn:hover {
+    color: #f1f1f1;
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer-text p{
+  margin-top: 90px;
+  align-items: center;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .footer-text p{
+    font-size: 16px;
+  margin-top: 320px;
+  align-items: center;
+  text-align: center;
+}
+}
+@media (max-width: 768px) {
+  .footer-text p{
+    font-size: 13px;
+  margin-top: 320px;
+  align-items: center;
+  text-align: center;
+}
+}
+@media (max-width: 576px) {
+  .footer-text p{
+    font-size: 13px;
+  margin-top: 290px;
+  align-items: center;
+  text-align: center;
+}
+}
+@media (max-width: 434px) {
+  .footer-text p{
+    font-size: 13px;
+  margin-top: 290px;
+  align-items: center;
+  text-align: center;
+}
+.text-right .button{
+  display: none;
+}
+}
