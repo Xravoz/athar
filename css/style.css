@@ -1058,6 +1058,15 @@ header .nav .closemenu{
   height: 73vh;
   animation: moveeImage 4s infinite ease-in-out;
 }
+@media (max-width: 420px){
+  .palstine svg{
+  height: 63vh;
+  animation: moveeImage 4s infinite ease-in-out;
+}
+.athar-img img{
+  width: 300px;
+}
+}
 @keyframes moveeImage {
   0% {
     transform: translateY(0);

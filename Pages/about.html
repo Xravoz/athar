@@ -38,9 +38,6 @@ body {
   height: 400px;
   margin-top: 200px;
   border-radius: 10px;
-  box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.2);
-  background: #f3f7ff;
-  overflow: hidden;
   .ds-top {
     position: absolute;
     margin: auto;
@@ -1351,21 +1348,15 @@ body {
   background-repeat: no-repeat;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  text-align: center;
-}
+
 
 .card {
   padding: 1em;
   width: 900px;
   border-radius: 0.8em;
- 
-  position: relative;
+ align-items: center;
+ text-align: center;
+ justify-content: center;
 }
 
 .card:after {
@@ -1381,8 +1372,8 @@ body {
 }
 
 .card__image {
-  width: 120px;
-  height: 121px;
+  width: 123px;
+  height: 122px;
   border-radius: 50%;
 }
 
@@ -1471,7 +1462,6 @@ body {
   @media (max-width: 800px) {
   .card {
     width: 300px;
-    overflow: scroll;
   }
   .card:after {
     top: ;
@@ -1479,7 +1469,10 @@ body {
 @media (max-width: 425px) {
   .card {
     width: 200px;
-    overflow: scroll;
+  }
+  .card__action{
+    flex-direction: column;
+    gap: 20px
   }
 
 
@@ -1665,7 +1658,7 @@ header .nav .closemenu{
 
     </style>
     <header>
-        <a href="#" class="logo">
+        <a href="/index.html" class="logo">
             <img src="/images/athar.png" alt="" class="logo">
         </a>
         <div class="openmenu"><i class="fa fa-bars"></i></div>
